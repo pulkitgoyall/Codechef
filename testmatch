@@ -1,0 +1,34 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+
+class testmatch
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int i=0;i<t;i++)
+        {
+            for(int j=0;j<5;j++)
+            {
+                int n=sc.nextInt();
+                if(n==1)
+                in++;
+                if(n==2)
+                en++;
+                if(in>0 && en>0)
+                {
+                    in--; en--;
+                }
+            }
+            if(in>en)
+            System.out.println("INDIA");
+            else if(en>in)
+            System.out.println("ENGLAND");
+            else
+            System.out.println("DRAW");
+        }
+    }
+}
